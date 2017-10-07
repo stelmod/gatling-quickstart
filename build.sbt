@@ -1,17 +1,14 @@
 import Dependencies._
 
-lazy val root = (project in file(".")).
-  settings(
-    inThisBuild(List(
-      organization := "com.stelmod",
-      scalaVersion := "2.12.3",
-      version      := "0.1.0-SNAPSHOT"
-    )),
-    name := "gatling-quickstart",
-    libraryDependencies += gatling,
-    libraryDependencies += scalaTest % Test,
-    libraryDependencies += gatlingTest % Test
-  )
+name := "gatling-quickstart"
+organization := "com.stelmod"
+version := "0.1.0-SNAPSHOT"
+
+scalaVersion := "2.12.3"
+
+libraryDependencies += gatling
+libraryDependencies += scalaTest % Test
+libraryDependencies += gatlingTest % Test
 
 enablePlugins(GatlingPlugin)
 
