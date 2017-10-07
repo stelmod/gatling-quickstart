@@ -1,2 +1,2 @@
 # gatling-quickstart
-Basic examples of gatling scenarios for performance testing
+Basic examples of [gatling](https://gatling.io/) simulations for performance testing.
